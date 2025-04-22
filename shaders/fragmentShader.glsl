@@ -1,3 +1,5 @@
+//Fragment shader
+
 varying vec2 vUv;  
 varying float vElevation;
 uniform float uColorChange;
@@ -6,8 +8,8 @@ uniform float uColorChange;
     vec4 c1 = vec4(0.8863, 0.5059, 0.9373, 1.0);
     vec4 c2 = vec4(1.0,1.0,1.0,1.0);
 
-    vec4 c3 = vec4(0.4863, 0.5294, 0.9255, 1.0);
-    vec4 c4 = vec4(0.9451, 0.9451, 0.9451, 1.0);
+    vec4 c3 = vec4(0.9804, 0.9765, 0.9686, 1.0);
+    vec4 c4 = vec4(0.9137, 0.7451, 0.1373, 1.0);
 
 
     float v = smoothstep(-.14,.15,vElevation*.2);
